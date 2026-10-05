@@ -1,0 +1,19 @@
+Copyright (c) 2026 rekt.page. All rights reserved.
+
+This source code is published only so that anyone can read it and check that it
+matches the programs deployed on Solana mainnet:
+
+  rekt-access  REKTKhydBNJMvFZX6iELQ6eiTggPa18WYzwAdjQGCNH
+  rekt-burn    BURNSZMs9SKHsR5mqVDipDDShLXrPeGDXQUBZPJSQ1dg
+
+You may read the code, and you may download it, keep copies of it and build it
+solely to compare the result with those deployed programs.
+
+No other right is granted. No license is granted under any patent or trademark.
+You may not use, copy, modify, merge, publish, distribute, sublicense, deploy or
+sell this code or any part of it, in source or compiled form, for any other
+purpose, without prior written permission from rekt.page.
+
+THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE CODE.

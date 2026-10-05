@@ -1,0 +1,33 @@
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+rekt_access = "REKTKhydBNJMvFZX6iELQ6eiTggPa18WYzwAdjQGCNH"
+rekt_burn = "BURNSZMs9SKHsR5mqVDipDDShLXrPeGDXQUBZPJSQ1dg"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx mocha -r ts-node/register -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 60000
+
+[[test.genesis]]
+address = "REKTKhydBNJMvFZX6iELQ6eiTggPa18WYzwAdjQGCNH"
+program = "target/deploy/rekt_access.so"
+upgradeable = true
+
+[[test.genesis]]
+address = "BURNSZMs9SKHsR5mqVDipDDShLXrPeGDXQUBZPJSQ1dg"
+program = "target/deploy/rekt_burn.so"
+upgradeable = true

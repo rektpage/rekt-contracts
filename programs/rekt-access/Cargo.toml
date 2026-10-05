@@ -1,0 +1,26 @@
+[package]
+name = "rekt-access"
+version = "0.1.0"
+description = "rekt.page access: stake REKT for a timed licence or pay once for a lifetime one"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "rekt_access"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build", "rekt-burn/idl-build"]
+# test builds only: one "day" is one second
+fast-clock = []
+# local click test only: one "day" is one minute
+minute-clock = []
+
+[dependencies]
+anchor-lang = "=0.32.1"
+anchor-spl = "=0.32.1"
+rekt-burn = { path = "../rekt-burn", features = ["cpi"] }

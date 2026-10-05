@@ -1,0 +1,24 @@
+[package]
+name = "rekt-burn"
+version = "0.1.0"
+description = "rekt.page burn vault: receives $REKT (tagged by source) and burns it on the admin's order"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "rekt_burn"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+# no-ops here: the workspace passes the staking program's test-clock features to every program
+fast-clock = []
+minute-clock = []
+
+[dependencies]
+anchor-lang = "=0.32.1"
+anchor-spl = "=0.32.1"
