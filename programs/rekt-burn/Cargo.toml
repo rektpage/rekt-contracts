@@ -20,5 +20,5 @@ fast-clock = []
 minute-clock = []
 
 [dependencies]
-anchor-lang = "=0.32.1"
+anchor-lang = { version = "=0.32.1", features = ["init-if-needed"] }
 anchor-spl = "=0.32.1"
